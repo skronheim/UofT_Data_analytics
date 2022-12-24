@@ -89,6 +89,18 @@ Sub stock_exercise():
             cell.NumberFormat = "0.00"
         Next cell
         
+        
+        'Sets up conditional formatting on Percent Change column
+        For Each cell In Worksheets(i).Range(Worksheets(i).Range("K2"), Worksheets(i).Range("K2").End(xlDown))
+            If cell.Value > 0 Then
+                cell.Interior.ColorIndex = 4
+            ElseIf cell.Value < 0 Then
+                cell.Interior.ColorIndex = 3
+            Else
+                cell.Interior.ColorIndex = 15
+            End If
+        Next cell
+        
         ' Now to grab bonus stats: Greatest % increase and decrease, and greatest total volume
             ' Look for required max/min of each summary column
         ' Defines last used column for summaries
