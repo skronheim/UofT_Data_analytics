@@ -1,5 +1,5 @@
 Attribute VB_Name = "VBAchallengeSK"
-Sub stock_exercise_v2():
+Sub vbaChallenge():
 
     'Loop through sheets in the workbook, performing code on each one; begins with "For i", ends with "Next i"
         ' This for loop will wrap everything
@@ -88,7 +88,7 @@ Sub stock_exercise_v2():
             total_stock_volumn_column.Rows(counter).Value = WorksheetFunction.Sum(Range(volume_of_stock.Rows(ticker_start), volume_of_stock.Rows(ticker_end)))
             
         Next tracker
-                    
+        
         ' Sets up conditional formatting on Yearly Change column; this will be at the end, after that column is populated
             ' Green for increase
             ' Red for decrease
@@ -99,6 +99,7 @@ Sub stock_exercise_v2():
                 cell.Interior.ColorIndex = 4
             ElseIf cell.Value < 0 Then
                 cell.Interior.ColorIndex = 3
+            ElseIf IsEmpty(cell.Value) Then
             ElseIf cell.Value = 0 Then
                 cell.Interior.ColorIndex = 15
             End If
@@ -113,6 +114,7 @@ Sub stock_exercise_v2():
                 cell.Interior.ColorIndex = 4
             ElseIf cell.Value < 0 Then
                 cell.Interior.ColorIndex = 3
+            ElseIf IsEmpty(cell.Value) Then
             ElseIf cell.Value = 0 Then
                 cell.Interior.ColorIndex = 15
             End If
