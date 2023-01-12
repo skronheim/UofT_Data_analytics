@@ -156,7 +156,7 @@ def run_calculations(csv_file):
     print(f"Greatest Decrease in Profits: {date_min} (${greatest_decrease})")
 
     # Writes everything to a .txt file
-    with open('Financial_Analysis.txt','w') as f:
+    with open(os.path.join(".", "analysis", "Financial_Analysis.txt"), 'w') as f:
         f.write("Financial Analysis\n")
         f.write("----------------------------\n")
         f.write(f"Total Months: {months}\n" )

@@ -118,7 +118,7 @@ def run_calculations(csv_file):
     print("-------------------------")
 
     # Writes everything to a .txt file
-    with open('Election_Analysis.txt','w') as f:
+    with open(os.path.join(".", "analysis", "Election_Analysis.txt"), 'w') as f:
         f.write("Election Results\n")
         f.write("-------------------------\n")   
         f.write(f"Total Votes: {total_votes}\n")

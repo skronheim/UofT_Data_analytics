@@ -29,4 +29,4 @@ Election data should include a column for candidate voted for; number of candida
 
 Both python sctipts are run the same way; navigate to the appropriate directory and run the main.py file.
 
-Each main.py file prints an output to the terminal and writes a .txt file with the same information into the directory in which the main.py file resides. 
+Each main.py file prints an output to the terminal and writes a .txt file with the same information into the 'analysis' directory that resides in the  directory in which the main.py file resides. 
