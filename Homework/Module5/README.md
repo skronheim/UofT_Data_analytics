@@ -20,7 +20,7 @@ Study_results should include columns for 'MouseID', 'Timepoint', 'Tumor Volume (
 
 Mouse_metadata should include columns for 'MouseID', 'Drug Regimen', 'Sex', 'Age_months', and 'Weight (g)'.
 
-Jupyter notebook, python, pandas (version 1.2.3), scipy, and numpy are required to run this code. 
+Jupyter notebook, python (version 3.7.7), pandas (version 1.0.5), scipy (version 1.5.0), matplotlib (version 3.2.2), and numpy (version 1.18.5) are required to run this code. 
 
 ## Instructions 
 
