@@ -64,3 +64,14 @@ select * from category;
 select * from contacts;
 
 select * from subcategory;
+
+select c.cf_id, con.first_name, con.last_name, con.email, c.description, c.goal, c.pledged, c.outcome, 
+c.backers_count, c.country, c.currency, c.launch_date, c.end_date, c.company_name,  
+cat.category, sub.subcategory, c.contact_id, c.category_id, c.subcategory_id
+from campaign c
+inner join category cat on 
+c.category_id = cat.category_id
+inner join subcategory sub on 
+c.subcategory_id = sub.subcategory_id
+inner join contacts con on 
+c.contact_id = con.contact_id;
