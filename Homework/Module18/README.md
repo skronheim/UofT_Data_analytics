@@ -9,7 +9,7 @@
 
 This code is written in Python for use with Pandas and several other packages to clean CitiBike data and output a cleaned, sampled dataset into a csv file for use with Tableau Public to fulfill the Module 18 Challenge homework assignment in the UofT data analytics course. 
 
-The code in this repository is used to clean and output the data, which can then be loaded into Tableau Public for analysis. The analysis below refers to the visualizations made in Tableau Public, which can be found at **https://public.tableau.com/app/profile/sarah.kronheim/viz/CitiBikeAnalysis_16828914924020/CitiBike2022Analysis?publish=yes**
+The code in this repository is used to clean and output the data, which can then be loaded into Tableau Public for analysis. The analysis below refers to the visualizations made in Tableau Public, which can be found at **https://public.tableau.com/app/profile/sarah.kronheim**
 
 The visualizations, dashboards, and the story can be viewed as tabs at the above link. There are 18 individual visualizations, 2 dashboards, and 1 story. The story contains both dashboards and two additional visualizations.
 
@@ -24,7 +24,7 @@ To clean the data, run the 'citibike_data_cleaning.ipynb' file. This will take t
 
 ## CitiBike Analysis
 
-* The Tableau page can be accessed using **https://public.tableau.com/app/profile/sarah.kronheim/viz/CitiBikeAnalysis_16828914924020/CitiBike2022Analysis?publish=yes**
+* The Tableau page can be accessed using **https://public.tableau.com/app/profile/sarah.kronheim**
 
 * The map of all stations in 2022, colored by zipcode and sized by popularity, is shown first. This shows that there were many CitiBike stations in New York City in 2022, especially clustered in Manhattan. Several stations in Jerzy City are included in this dataset; these are the Jerzy City stations that several individuals finished their rides at, when starting from New York City. 
     * The map reveals a bias in the locations of CitiBike stations, with more stations in Manhattan and fewer in other Boroughs of NYC. 
