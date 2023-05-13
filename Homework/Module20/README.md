@@ -27,7 +27,7 @@ Next, the data was resampled using RandomOverSampler to address potential issues
 
 ## Results
 
-* Machine Learning Model 1:
+* Machine Learning Model 1 (original data, split into training and testing sets):
   * Accuracy: 94.4%
   * Precision: 
     * Safe loans: 100%
@@ -36,7 +36,7 @@ Next, the data was resampled using RandomOverSampler to address potential issues
     * Safe loans: 100%
     * High-risk loans: 89%
 
-* Machine Learning Model 2:
+* Machine Learning Model 2 (oversampled training data):
   * Accuracy: 99.6%
   * Precision:
     * Safe loans: 100%
@@ -53,4 +53,4 @@ However, **the most important metric for these models is their ability to identi
 
 Model 2, which was trained using oversampled data, improves the recall of high-risk loans from 89% (in Model 1) to 100%. Model 2 also improves the balanced accuracy from 94% to 99%, though the precision of high-risk loans does not change between the two models. 
 
-This all means that Model 2 performs better, both overall and in recall of high-risk loans, and as such is the better model to use when predicting the safety of a potential load. 
+This all means that Model 2 performs better, both overall and in recall of high-risk loans, and as such is the better model to use when predicting the safety of a potential load. Model 1 would be undesirable to use even in the absence of Model 2 because it only has 89% recall for high-risk loans, which means that many high-risk loans would slip through the model. 
