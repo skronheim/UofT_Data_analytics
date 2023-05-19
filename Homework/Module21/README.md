@@ -4,8 +4,8 @@
 
 1. Overview
 2. Results
-  1. Data Preprocessing
-  2. Model Preparation and Evaluation
+  * Data Preprocessing
+  * Model Preparation and Evaluation
 3. Summary
 
 ## Overview
